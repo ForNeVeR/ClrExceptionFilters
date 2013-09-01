@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VbNetFilter", "VbNetFilter\VbNetFilter.vbproj", "{018DDE06-F068-4641-A3E3-21BD5BB65BFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpFilter", "CSharpFilter\CSharpFilter.csproj", "{804D882A-CC14-4100-B796-F00256189183}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpFilter", "FSharpFilter\FSharpFilter.fsproj", "{88ACA231-6848-49DA-AB26-9F513A883B3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{018DDE06-F068-4641-A3E3-21BD5BB65BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{018DDE06-F068-4641-A3E3-21BD5BB65BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{018DDE06-F068-4641-A3E3-21BD5BB65BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{018DDE06-F068-4641-A3E3-21BD5BB65BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{804D882A-CC14-4100-B796-F00256189183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{804D882A-CC14-4100-B796-F00256189183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{804D882A-CC14-4100-B796-F00256189183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{804D882A-CC14-4100-B796-F00256189183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88ACA231-6848-49DA-AB26-9F513A883B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88ACA231-6848-49DA-AB26-9F513A883B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88ACA231-6848-49DA-AB26-9F513A883B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88ACA231-6848-49DA-AB26-9F513A883B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
