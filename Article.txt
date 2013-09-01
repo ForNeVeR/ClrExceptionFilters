@@ -25,7 +25,7 @@ Sub FilterException()
 		Console.WriteLine("Throwing")
 		Throw exception
 	Catch ex As Exception When Filter(ex) ' здесь фильтр
-		Console.WriteLine("Catched")
+		Console.WriteLine("Caught")
 	Finally
 		Console.WriteLine("Finally")
 	End Try
@@ -43,7 +43,7 @@ End Function
 <source lang="dos">
 Throwing
 Filtering
-Catched
+Caught
 Finally
 </source>
 
@@ -65,7 +65,7 @@ let filterException() =
         printfn "Throwing"
         raise ex
     with // дальше фильтр
-    | :? Exception as ex when filter(ex) -> printfn "Catched"
+    | :? Exception as ex when filter(ex) -> printfn "Caught"
 
 [<EntryPoint>]
 let main argv = 
@@ -130,7 +130,7 @@ CIL (Common Intermediate Language) - это аналог низкоуровне�
     }  // end filter
     {  // handler
       IL_004b:  pop
-      IL_004c:  ldstr      "Catched"
+      IL_004c:  ldstr      "Caught"
       IL_0051:  call       void [mscorlib]System.Console::WriteLine(string)
       IL_0056:  nop
       IL_0057:  call       void [Microsoft.VisualBasic]Microsoft.VisualBasic.CompilerServices.ProjectData::ClearProjectError()
@@ -212,7 +212,7 @@ public static void FilterException()
     }
     catch when (?)
     {
-        Console.WriteLine("Catched");
+        Console.WriteLine("Caught");
         ProjectData.ClearProjectError();
     }
     finally
@@ -232,7 +232,7 @@ Public Shared Sub FilterException()
         Console.WriteLine("Throwing")
         Throw exception
     Catch obj1 As Object When (?)
-        Console.WriteLine("Catched")
+        Console.WriteLine("Caught")
         ProjectData.ClearProjectError
     Finally
         Console.WriteLine("Finally")
@@ -265,7 +265,7 @@ static void FilterException()
 			throw;
 		}
 
-		Console.WriteLine("Catched");
+		Console.WriteLine("Caught");
 	}
 }
 
